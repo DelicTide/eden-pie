@@ -100,9 +100,9 @@ def main():
         "negative_prompt": "nude, naked, text, watermark, low-quality, signature, padding, margins, blurry, jpeg artifacts, poorly drawn, low-resolution, bad",
         "style_images": style_images,
         "input_video_path": input_video_url,  # Use the video URL in the configuration
-        "n_frames": 128,
+        "n_frames": 64,
         "control_method": "coarse",
-        "text_input": "A 'Time Traveler' visits the same place over thousands of years",
+        "text_input": "",
         "width": 1024,
         "height": 1024,
         "denoise_strength": 0.95,

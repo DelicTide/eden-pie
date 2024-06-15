@@ -1,1 +1,6 @@
 .env
+eden_venv
+__pycache__
+*.jpeg
+*.mp4
+.DS_Store

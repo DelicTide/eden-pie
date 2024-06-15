@@ -22,11 +22,9 @@ yah.
 │       ├── image_1.jpg
 │       ├── image_2.jpg
 │       └── ...
-├── eden_sdk
-├── src (not so:-)
-│   ├── txt2img.py
-│   ├── cv.py
-│   ├── vid.py
+│── txt2img.py
+│── cv.py
+│── vid.py
 ├── main.py
 ├── requirements.txt
 └── README.md
@@ -34,10 +32,10 @@ yah.
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository: (i prefer ssh connections to giuthub. It's much more convient once setup)
     ```sh
-    git clone https://github.com/yourusername/ai-image-video-gen.git
-    cd ai-image-video-gen
+    git clone git@github.com:DelicTide/eden-pie.git
+    cd eden-pie
     ```
 
 2. Create and activate a virtual environment:
@@ -70,12 +68,12 @@ yah.
     ```
 
 3. The `main.py` script will:
-    - Create necessary folders and clear previous images.
-    - Generate images using the Eden API.
-    - Download and save the images in the `assets/images` folder.
-    - Select two random style images and save their URLs in `assets/inputs/style_images.txt`.
-    - Run the `cv.py` script to compile images into a video.
-    - Run the `vid.py` script to process the video with Eden's vid2vid functionality and download the processed video to `assets/outputs/v2v.mp4`.
+    - Creates necessary folders and clear previous images.
+    - Generates images using the Eden API.
+    - Downloads and save the images in the `assets/images` folder.
+    - Selects two random style images and save their URLs in `assets/inputs/style_images.txt`.
+    - Runs the `cv.py` script to compile images into a video.
+    - Runs the `vid.py` script to process the video with Eden's vid2vid functionality and download the processed video to `assets/outputs/v2v.mp4`.
 
 ## Detailed Script Description
 

@@ -1,0 +1,7 @@
+aiofiles
+httpx
+Pillow
+requests
+python-dotenv
+opencv-python
+git+https://github.com/edenartlab/eden-sdk-py.git

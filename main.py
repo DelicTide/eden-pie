@@ -50,7 +50,7 @@ def upload_control_image(file_path):
 
 async def main():
     prompt = "A 'Time Traveler' visits the same place over thousands of years"
-    num_requests = 64  # Number of image generation requests
+    num_requests = 32  # Number of image generation requests
 
     # Create necessary folders
     create_folder('assets')

@@ -125,7 +125,7 @@ def generate_images(prompt, num_requests, control_image_url):
             'uc_text': "watermark, text, nude, naked, nsfw, poorly drawn face, ugly, tiling, out of frame, blurry, blurred, grainy, signature, cut off, draft",
             'control_image': control_image_url,
             'text_input': enhanced_prompt,
-            'control_image_strength': 0.32,
+            'control_image_strength': 0.55,
             'controlnet_type': 'canny-edge',
             'width': 1024,
             'height': 1024,
@@ -134,8 +134,8 @@ def generate_images(prompt, num_requests, control_image_url):
             'sampler': 'euler',
             'steps': 32,
             'seed': random.randint(1, 1000000),
-            'lora': '6596eecbb2a8488c8d15c2e4',
-            'lora_scale': 0.64,
+            'lora': '658d3057ec6555ba23915948',
+            'lora_scale': 0.14,
             'adopt_aspect_from_init_img': True
         }
         thread = threading.Thread(target=generate_image, args=(config, results, i))
