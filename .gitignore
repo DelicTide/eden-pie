@@ -1,6 +1,17 @@
+# Environment variables file
 .env
-eden_venv
-__pycache__
-*.jpeg
-*.mp4
+
+# macOS Finder file
 .DS_Store
+
+# Virtual environment directory
+eden_venv/
+
+# Python cache files
+__pycache__/
+
+# Image files
+*.jpeg
+
+# Video files
+*.mp4
