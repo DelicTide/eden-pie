@@ -22,9 +22,9 @@ yah.
 │       ├── image_1.jpg
 │       ├── image_2.jpg
 │       └── ...
-│── txt2img.py
-│── cv.py
-│── vid.py
+├── txt2img.py
+├── cv.py
+├── vid.py
 ├── main.py
 ├── requirements.txt
 └── README.md
