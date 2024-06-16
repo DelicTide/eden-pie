@@ -117,3 +117,19 @@ Feel free to submit issues or pull requests if you have any improvements or sugg
 This project is licensed under warm blankets, usally with coffee
 
 ~tdt
+
+notes: 
+    how i run the sequence... 
+
+    1st I will find or generate an intersteing Control image. 
+        Place that image in ./assets/inputs/ (delete any existing img when adding new images,
+            the file will read the 1st image it finds in the ./dir)
+    I then use context from my control img (such as its prompt) to define the intial prompt.
+        So, 2nd I will define the txt2img prompt in main.py as well as the number images to geerate (main.py line:52&53)
+    3rd I will select an appropriate model based on our control image and set the control and lora strengths in the txt2img.py config (txt2img.py line:125-148)
+    having selected our number of images to be generated, or in our case frames, we need to be sure that the compiled video and vid2vid share some comminalty in fps. 
+    A good starting point or the sweet spot seems to be 64/8/32
+    Thats 64 generated images using txt2img, compiled at 8fps using opencv, and passed to vid2vid for a total of 32 frames. 
+    This has generated smooth smokes of clouds and belivable limb movments. 
+     Lowering the fps in opencv will slow the video generation while increaasing the frames will produce seizure casuing vizuals. 
+     And generating less input frames than vid2vid frames produces choppy video. 
